@@ -14,6 +14,10 @@ const CreatePassword = () => {
     navigate("/signupsuccessfully");
   };
 
+  const handleSubmit = (event) => {
+    event.preventDefault();
+}
+
   const handleLogin = () => {
     navigate("/login");
   }
@@ -21,7 +25,7 @@ const CreatePassword = () => {
   return (
       <div className="relative w-120 py-20 bg-white rounded-lg shadow-md z-4 flex flex-col justify-center items-center">
         <h2 className="text-center text-2xl font-semibold mb-6">Create Password</h2>
-        <form className="w-[80%] flex flex-col items-center">
+        <form className="w-[80%] flex flex-col items-center" onSubmit={handleSubmit}> 
           
           {/* Create Password Field */}
           <div className="mb-4 relative w-[90%]">
@@ -78,7 +82,7 @@ const CreatePassword = () => {
           </ul>
 
           {/* Submit Button */}
-          <button type="submit" className="w-[70%] font-[700] bg-[#00A58E] text-white py-2 rounded-md mt-5 cursor-pointer" onClick={handleNext}>
+          <button className="w-[70%] font-[700] bg-[#00A58E] text-white py-2 rounded-md mt-5 cursor-pointer" onClick={handleNext}>
             Next
           </button>
         </form>

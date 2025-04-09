@@ -19,11 +19,15 @@ const ResetPassword = () => {
     navigate("/login");
   }
 
+  const handleSubmit = (event) => {
+    event.preventDefault();
+}
+
   return (
     <div className="relative w-120 py-22 px-4 bg-white rounded-lg shadow-md z-4 flex flex-col justify-center items-center">
             <h2 className="text-center text-2xl font-semibold mb-4">Reset Password</h2>
             <p className="text-center text-sm text-[#666666] font-[400] mb-8">Set a new password to access your account</p>
-            <form className="w-full flex flex-col items-center">
+            <form className="w-full flex flex-col items-center" onSubmit={handleSubmit}>
               
               {/* Create Password Field */}
               <div className="mb-4 relative w-[80%]">
@@ -60,7 +64,7 @@ const ResetPassword = () => {
               </div>
     
               {/* Submit Button */}
-              <button type="submit" className="w-80 bg-[#00A58E] text-white py-2 font-[700] rounded-md mt-5 cursor-pointer" onClick={() => navigate("/resetsuccessfully")}>
+              <button className="w-80 bg-[#00A58E] text-white py-2 font-[700] rounded-md mt-5 cursor-pointer" onClick={() => navigate("/resetsuccessfully")}>
                 Create New Password
               </button>
             </form>
