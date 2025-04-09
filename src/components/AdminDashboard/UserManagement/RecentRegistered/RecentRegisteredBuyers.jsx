@@ -1,19 +1,20 @@
+import { Icon } from '@iconify/react/dist/iconify.js';
 import React from 'react'
 
 
 const registrations = [
     {
-        id: "#527269", img: "/profile1.jpeg", userName: "Ketan", locality: "Pune", category: "Builder", licenseNo: "12345 67890",mobile: "+91 12345 67890"
+        id: "#527269", img: "/profile1.jpeg", userName: "Ketan", locality: "Pune", lookingFor: "Rental Properties",mobile: "+91 12345 67890"
     },
     {
-        id: "#748526", img: "/profile2.jpeg", userName: "Siddhart", locality: "Mumbai", category: "Agent", licenseNo: "------------",mobile: "+91 12345 67890"
+        id: "#748526", img: "/profile2.jpeg", userName: "Siddhart", locality: "Mumbai", lookingFor: "Residential",mobile: "+91 12345 67890"
     },
     {
-        id: "#748526", img: "/profile3.jpeg", userName: "Sarah", locality: "Nagpur", category: "Builder", licenseNo: "12345 67890",mobile: "+91 12345 67890"
+        id: "#748526", img: "/profile3.jpeg", userName: "Sarah", locality: "Nagpur", lookingFor: "Commercial",mobile: "+91 12345 67890"
     },
 ]
 
-const RecentRegistrationSeller = () => {
+const RecentRegisteredBuyers = () => {
 
     const handleButton = () => {
         alert("Currently Under Developement");
@@ -30,9 +31,7 @@ const RecentRegistrationSeller = () => {
                     <th className='w-2/20 '>
                     <p className='text-start px-2 font-[600]'>Locality</p></th>
                     <th className='w-3/20 '>
-                    <p className='text-start px-2 font-[600]'>Category</p></th>
-                    <th className='w-3/20 '>
-                    <p className='text-start px-2 font-[600]'>License No.</p></th>
+                    <p className='text-start px-2 font-[600]'>Looking For</p></th>
                     <th className='w-4/20 '>
                     <p className='text-start px-2 font-[600]'>Mobile</p></th>
                     <th className='w-3/20 '>
@@ -54,16 +53,14 @@ const RecentRegistrationSeller = () => {
                                 <p className='text-start'>{registration.locality}</p>
                             </td>
                             <td className='w-3/20'>
-                                <p className='text-start'>{registration.category}</p>
-                            </td>
-                            <td className='w-3/20'>
-                                <p className='text-start'>{registration.licenseNo}</p>
+                                <p className='text-start'>{registration.lookingFor}</p>
                             </td>
                             <td className='w-4/20'>
                                 <p className='text-start'>{registration.mobile}</p>
                             </td>
-                            <td className='w-3/20'>
-                                <button className='bg-[#ECF8F7] text-[#007F6D] text-l rounded px-4 py-2' onClick={handleButton}>View Details</button>
+                            <td className='w-3/20 flex items-center justify-center gap-4'>
+                                <Icon icon="lucide:edit" width="24" height="24" onClick={handleButton} className='text-[#000000]'/>
+                                <Icon icon="material-symbols-light:delete-outline-rounded" width="30" height="30" onClick={handleButton} className='text-[#FF0000]'/>
                             </td>
                         </li>)
                     }
@@ -73,4 +70,4 @@ const RecentRegistrationSeller = () => {
     )
 }
 
-export default RecentRegistrationSeller
+export default RecentRegisteredBuyers

@@ -113,7 +113,7 @@ const SellersDetails = () => {
                             <div className="bg-white rounded-2xl h-fit w-[28%] text-center">
                                 <h1 className="text-4xl font-[600] text-[#007A69]">30</h1>
                                 <h2 className="text-l text-[#007A69] font-[600]">Jan,Mon</h2>
-                                <button className="bg-[#00A58E] text-white px-4 py-2 rounded-b-2xl w-full mt-5">
+                                <button className="bg-[#00A58E] text-white px-4 py-2 rounded-b-2xl w-full mt-5" onClick={() => alert("Currently Under Developement")}>
                                     View Details
                                 </button>
                             </div>
@@ -121,7 +121,7 @@ const SellersDetails = () => {
                             <div className="bg-white rounded-2xl h-fit w-[28%] text-center">
                                 <h1 className="text-4xl font-[600] text-[#007A69]">30</h1>
                                 <h2 className="text-l text-[#007A69] font-[600]">Jan,Mon</h2>
-                                <button className="bg-[#00A58E] text-white px-4 py-2 rounded-b-2xl w-full mt-5">
+                                <button className="bg-[#00A58E] text-white px-4 py-2 rounded-b-2xl w-full mt-5" onClick={() => alert("Currently Under Developement")}>
                                     View Details
                                 </button>
                             </div>
@@ -129,7 +129,7 @@ const SellersDetails = () => {
                             <div className="bg-white rounded-2xl h-fit w-[28%] text-center">
                                 <h1 className="text-4xl font-[600] text-[#007A69]">30</h1>
                                 <h2 className="text-l text-[#007A69] font-[600]">Jan,Mon</h2>
-                                <button className="bg-[#00A58E] text-white px-4 py-2 rounded-b-2xl w-full mt-5">
+                                <button className="bg-[#00A58E] text-white px-4 py-2 rounded-b-2xl w-full mt-5" onClick={() => alert("Currently Under Developement")}>
                                     View Details
                                 </button>
                             </div>
@@ -141,11 +141,10 @@ const SellersDetails = () => {
                     <button className="bg-[#ECF8F7] text-[#007F6D] font-[600] w-60 h-10 rounded cursor-pointer" onClick={() => navigate(-1)}>
                         Back to list of Seller
                     </button>
-                    <NavLink to="/property-Lists">
-                        <button className="bg-[#007F6D]  text-white font-[600] w-60 h-10 rounded cursor-pointer">
+                        <button className="bg-[#007F6D]  text-white font-[600] w-60 h-10 rounded cursor-pointer" 
+                        onClick={() => alert("Currently Under Developement")}>
                             View Properties
                         </button>
-                    </NavLink>
                 </div>
             </div>
         </>

@@ -12,7 +12,7 @@ const RecentRegistrations = () => {
     }
 
     return (
-        <div className='w-full mt-10 rounded-xl px-8 py-6 bg-[#FFFFFF]'>
+        <div className='w-full h-fit mt-10 rounded-xl px-8 py-6 bg-[#FFFFFF]'>
             <div className='w-full flex justify-between'>
                 <p className='text-[#000000]/[70%] text-xl font-[500]'>Recent Registrations</p>
                 <div className="flex w-[50%] items-center bg-white text-gray-700 rounded-sm px-4 py-2 border-1 border-[#e8edf1]">
@@ -21,9 +21,9 @@ const RecentRegistrations = () => {
                 </div>
             </div>
 
-            <ul className='w-full flex flex-col mt-6 px-10'>
+            <ul className='w-full h-150 overflow-y-scroll no-scrollbar flex flex-col mt-6 px-10'>
                 {
-                    [1, 2, 3, 4, 5, 6, 7, 8].map((item) => <li key={item} className='w-full flex border-b-2 border-[#BBB9B9] py-2 justify-between'>
+                    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map((item) => <li key={item} className='w-full flex border-b-2 border-[#BBB9B9] py-2 justify-between'>
                         <div className='w-fit flex items-center'>
                             <Icon icon="circum:image-on" width="62" height="62" className='p-4 bg-[#F0F0F0] rounded mr-6' />
 

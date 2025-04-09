@@ -39,7 +39,7 @@ import ResetSuccessfully from './pages/Password/ResetPassword/ResetSuccessfully/
 import Buyers from './components/AdminDashboard/UserManagement/Buyers/Buyers';
 import Seller from './components/AdminDashboard/UserManagement/Seller/Seller';
 import SellerDashboard from './components/AdminDashboard/UserManagement/Seller/SellerDashboard/SellerDashboard';
-import RecentRegistered from './components/AdminDashboard/UserManagement/RecentRegistered/RecentRegistered';
+import RecentRegistered from './components/AdminDashboard/UserManagement/RecentRegistered/RecentRegisteredSeller';
 import RecentRegistrations from './components/AdminDashboard/UserManagement/RecentRegistered/RecentRegistrations/RecentRegistrations';
 import SellersDetails from './components/AdminDashboard/UserManagement/Seller/SellersDetails/SellersDetails';
 

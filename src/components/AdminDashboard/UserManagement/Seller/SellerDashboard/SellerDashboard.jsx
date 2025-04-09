@@ -1,7 +1,7 @@
 import React from 'react'
 import { Icon } from '@iconify/react/dist/iconify.js'
 import { IoMdStar } from 'react-icons/io'
-import RecentRegistered from '../../RecentRegistered/RecentRegistered'
+import RecentRegistered from '../../RecentRegistered/RecentRegisteredSeller'
 import { useNavigate } from 'react-router-dom'
 
 const SellerDashboard = () => {
@@ -16,15 +16,15 @@ const SellerDashboard = () => {
     <>
      <section className='w-full flex mt-10 justify-center gap-6'>
       {/* left Division */}
-      <div className='w-1/2 rounded-xl px-6 py-6 bg-[#FFFFFF]'>
+      <div className='w-1/2 h-fit rounded-xl px-6 py-6 bg-[#FFFFFF]'>
         <div className='w-full flex justify-between'>
           <p className='text-[#000000]/[70%] text-xl font-[500]'>Recent Registrations</p>
           <p className='text-[#000000]/[70%] text-sm font-[400] mr-4' onClick={() => navigate("/superadmin/usermanagement/seller/recentregistrations")}>View More</p>
         </div>
 
-        <ul className='w-full flex flex-col mt-6'>
+        <ul className='w-full h-100 overflow-y-scroll no-scrollbar flex flex-col mt-4'>
           {
-            [1, 2, 3, 4].map((item) => <li key={item} className='w-full flex border-b-2 border-[#BBB9B9] py-2 '>
+            [1, 2, 3, 4, 5, 6, 7].map((item) => <li key={item} className='w-full flex border-b-2 border-[#BBB9B9] py-2 '>
               <Icon icon="circum:image-on" width="62" height="62" className='p-4 bg-[#F0F0F0] rounded' />
 
               <div className='w-[48%] flex flex-col ml-4 gap-2'>
@@ -47,12 +47,12 @@ const SellerDashboard = () => {
       </div>
 
       {/* Right Division */}
-      <div className='w-1/2 rounded-xl px-6 py-6 bg-[#FFFFFF]'>
+      <div className='w-1/2 h-fit rounded-xl px-6 py-6 bg-[#FFFFFF]'>
         <p className='text-[#000000]/[70%] text-xl font-[500]'>Recent Reviews</p>
 
-        <ul className='w-full'>
+        <ul className='w-full h-100 mt-4 flex flex-col overflow-y-scroll no-scrollbar'>
           {
-            [1, 2].map((item) => <li key={item} className='w-full py-4 text-black p-2 border-b border-[#CCC8C8]'>
+            [1, 2, 3, 4, 5, 6].map((item) => <li key={item} className='w-full py-4 text-black p-2 border-b border-[#CCC8C8]'>
                   <div className='flex gap-4 items-center'>
                       <img src="/profile1.jpeg" className='w-10 h-10 rounded-full'/>
                       <h1 className='text-[#222222] font-[400]'>Chetan</h1>

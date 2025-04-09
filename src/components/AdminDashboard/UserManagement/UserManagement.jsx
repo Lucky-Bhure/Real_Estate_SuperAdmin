@@ -88,7 +88,7 @@ const UserManagement = () => {
           <button className={`bg-teal-20 text-teal-900 font-medium  h-9 rounded ${location.pathname === '/superadmin/usermanagement' ? "drop-shadow-[0_0.93px_2.8px_rgba(0,165,142,0.2)] bg-[#CCEDE8] px-14" : "bg-white px-10"}`}>Buyers</button>
         </NavLink>
         <NavLink to="/superadmin/usermanagement/seller" end={location.pathname === "/superadmin/usermanagement"}>
-          <button className={`bg-teal-20 text-teal-900 font-medium h-9 rounded ${location.pathname === '/superadmin/usermanagement/seller' ? "drop-shadow-[0_0.93px_2.8px_rgba(0,165,142,0.2)] bg-[#CCEDE8] px-14" : "bg-white px-10"}`}>Seller</button>
+          <button className={`bg-teal-20 text-teal-900 font-medium h-9 rounded ${(location.pathname === '/superadmin/usermanagement/seller' || location.pathname === "/superadmin/usermanagement/seller/recentregistrations" || location.pathname === "/superadmin/usermanagement/seller/sellersdetails") ? "drop-shadow-[0_0.93px_2.8px_rgba(0,165,142,0.2)] bg-[#CCEDE8] px-14" : "bg-white px-10"}`}>Seller</button>
         </NavLink>
       </div>
 
