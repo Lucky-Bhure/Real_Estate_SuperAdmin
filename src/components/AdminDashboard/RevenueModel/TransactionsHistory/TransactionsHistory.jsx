@@ -3,7 +3,7 @@ import TransactionsHistoryTable from '../TransactionsHistoryTable/TransactionsHi
 
 const TransactionsHistory = () => {
   return (
-    <div className='w-full flex flex-col absolute top-0 bg-white rounded-2xl p-10'>
+    <div className='w-full flex flex-col top-0 bg-white rounded-2xl p-10 mb-10'>
       <TransactionsHistoryTable />
     </div>
   )

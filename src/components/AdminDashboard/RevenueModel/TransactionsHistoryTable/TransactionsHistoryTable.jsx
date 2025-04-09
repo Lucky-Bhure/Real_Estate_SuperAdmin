@@ -41,7 +41,7 @@ const TransactionsHistoryTable = ({value}) => {
           <td>{current.name}</td>
           <td>{current.type}</td>
           <td>{current.amount}</td>
-          <td className="text-[#00A58E] cursor-default" onClick={handleDetails}>View Detail</td>
+          <td className="text-[#00A58E] cursor-default" onClick={handleDetails}>View Details</td>
         </tr>)
         }
         

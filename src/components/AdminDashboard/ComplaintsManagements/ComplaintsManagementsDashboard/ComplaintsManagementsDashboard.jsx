@@ -36,7 +36,7 @@ const ComplaintsManagementsDashboard = () => {
                                 <div className=' w-3/8 flex  gap-6'>
                                     <img src="/propertyImage.jpeg" alt="propertyImage" className='w-14 h-14 rounded-xl' />
                                     <div className='w-fit flex flex-col gap-2'>
-                                        <p className='text-l font-[600] cursor-default' onClick={handleClick}>Name</p>
+                                        <p className='text-l font-[600] cursor-default'>Name</p>
                                         <div className='flex gap-2'>
                                             <MdEmail size={24} className='text-[#00A58E] ' />
                                             <p className='text-sm text-[#5E6670]'>Email@123</p>
@@ -48,7 +48,7 @@ const ComplaintsManagementsDashboard = () => {
                                 </div>
                                 <div className=' w-3/8 flex py-1 justify-end gap-4'>
                                     <button className='bg-[#00A58E] text-white px-8 py-3 text-sm rounded-sm' onClick={handleButton}>Mark As Resolved</button>
-                                    <button className='bg-[#DD2025] text-white px-8 py-3 text-sm rounded-sm' onClick={handleButton}>View</button>
+                                    <button className='bg-[#DD2025] text-white px-8 py-3 text-sm rounded-sm' onClick={handleClick}>View</button>
                                 </div>
                             </div>)
                         }

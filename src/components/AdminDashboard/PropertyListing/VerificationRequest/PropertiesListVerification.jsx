@@ -22,7 +22,7 @@ const PropertiesListVerification = ({ propertyList, value, count = 1 }) => {
   };
 
   return (
-    <div className={`${count ? "w-full top-10 mt-12 py-2 bg-[white] rounded-xl": "w-full"} `}>
+    <div className={`${count ? "w-full top-10 mt-12 py-2 bg-[white] rounded-xl": "w-full"} mb-10 `}>
       <div className={`${count ? "w-full px-8 pb-6 pr-28": ""}`}>
         <ul className="w-full mt-4 mb-6">
 

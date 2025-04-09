@@ -23,7 +23,7 @@ import PropertyDetails from './components/AdminDashboard/PropertyDetails/Propert
 import AdvertisementDetails from './components/AdminDashboard/Advertisements/AdvertisementDetails/AdvertisementDetails';
 import AdvertisementDashboard from './components/AdminDashboard/Advertisements/AdvertisementDashboard/AdvertisementDashboard';
 import EditSubscriptionManagement from './components/AdminDashboard/SubscriptionManagement/EditSubscriptionManagement/EditSubscriptionManagement';
-import SubscriptionDashboard from './components/AdminDashboard/SubscriptionManagement/SubscriptionDashboard';
+import SubscriptionDashboard from './components/AdminDashboard/SubscriptionManagement/SubscriptionDashboard/SubscriptionDashboard';
 import RevenueModelDashboard from './components/AdminDashboard/RevenueModel/RevenueModelDashboard/RevenueModelDashboard';
 import TransationsDetails from './components/AdminDashboard/RevenueModel/TransationsDetails/TransationsDetails';
 import TransactionsHistory from './components/AdminDashboard/RevenueModel/TransactionsHistory/TransactionsHistory';

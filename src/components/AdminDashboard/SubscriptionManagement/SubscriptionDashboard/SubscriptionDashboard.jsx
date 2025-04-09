@@ -1,9 +1,9 @@
 import { Icon } from '@iconify/react/dist/iconify.js';
 import React from 'react'
-import StateCards from '../StateCards/StateCards';
-import ManageSubscription from './EditSubscriptionManagement/ManageSubscription/ManageSubscription';
-import AnalyticsChart from './AnalyticsChart/AnalyticsChart';
-import SubscriberStats from './SubscriberStats/SubscriberStats';
+import StateCards from '../../StateCards/StateCards';
+import ManageSubscription from '../EditSubscriptionManagement/ManageSubscription/ManageSubscription';
+import AnalyticsChart from '../AnalyticsChart/AnalyticsChart';
+import SubscriberStats from '../SubscriberStats/SubscriberStats';
 
 const state = [
     {
@@ -77,7 +77,7 @@ const state = [
 const SubscriptionDashboard = () => {
   return (
     <>
-      <div className="w-full flex flex-col items-center gap-4">
+      <div className="w-full flex flex-col items-center gap-4 mb-4">
           <StateCards state={state} />
 
           <div className='w-full flex gap-8'>

@@ -101,7 +101,7 @@ const HomeDashboard = () => {
       <Buttons />
 
           {/* graph part */}
-          <div className="w-full mt-8 shadow-md gap-6 flex">
+          <div className="w-full mt-8 gap-6 flex">
             {/* Left Section - Larger Width */}
             <div className="w-9/12 bg-white p-10 shadow-md rounded-2xl">
               {/* Overview Statistics Section */}

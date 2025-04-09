@@ -6,7 +6,7 @@ import PropertiesListVerification from './PropertiesListVerification';
 
 const VerificationRequest = ({propertyList}) => {
     return (
-        <div className='flex flex-col w-full p-8 bg-white rounded'>
+        <div className='flex flex-col w-full p-8 bg-white rounded mb-10'>
             <div className='flex items-center justify-between'>
                 <p className='text-xl  text-[#616161] font-[700]'>Request for Verification</p>
                 <div className="flex items-center bg-white text-gray-700 rounded-sm px-2 py-2 w-110 justify-end border-1 border-[#E8EDF1]">

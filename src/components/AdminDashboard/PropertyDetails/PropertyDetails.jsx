@@ -52,7 +52,7 @@ const amenities = [
 const PropertyDetails = () => {
   return (
     <>
-      <div className="w-full flex flex-col items-center bg-[white] rounded-2xl px-10 py-10">
+      <div className="w-full flex flex-col items-center bg-[white] rounded-2xl px-10 py-10 mb-10">
         
         {/* Property Header */}
         <PropertyProfile propertyName={"Property Name"} />
