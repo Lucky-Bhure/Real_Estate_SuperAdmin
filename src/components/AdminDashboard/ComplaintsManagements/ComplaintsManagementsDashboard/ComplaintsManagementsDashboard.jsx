@@ -6,10 +6,6 @@ const ComplaintsManagementsDashboard = () => {
 
     const navigate = useNavigate();
 
-    const handleButton = () => {
-        alert("Currently Under Developement");
-    }
-
     const handleClick = () => {
         navigate("/superadmin/complaintsmanagement/complaint");
     }
@@ -46,9 +42,9 @@ const ComplaintsManagementsDashboard = () => {
                                 <div className='w-2/8'>
                                     <p className='text-md text-[#5E6670]'>Feb 25, 2025 19:28</p>
                                 </div>
-                                <div className=' w-3/8 flex py-1 justify-end gap-4'>
-                                    <button className='bg-[#00A58E] text-white px-8 py-3 text-sm rounded-sm' onClick={handleButton}>Mark As Resolved</button>
-                                    <button className='bg-[#DD2025] text-white px-8 py-3 text-sm rounded-sm' onClick={handleClick}>View</button>
+                                <div className=' w-3/8 flex py-1 justify-center gap-4'>
+                                    <button className='bg-[#00A58E] text-white px-16 py-3 text-sm font-[500] rounded' onClick={handleClick}>View</button>
+                                    {/* <button className='bg-[#DD2025] text-white px-8 py-3 text-sm rounded-sm' onClick={handleClick}>View</button> */}
                                 </div>
                             </div>)
                         }

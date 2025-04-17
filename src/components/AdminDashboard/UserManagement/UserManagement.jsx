@@ -85,10 +85,10 @@ const UserManagement = () => {
     <section className='w-full flex flex-col gap-10 mb-10'>
       <div className="flex gap-5 -mt-4 absolute w-full">
         <NavLink to="/superadmin/usermanagement" end={location.pathname === "/superadmin/usermanagement"}>
-          <button className={`bg-teal-20 text-teal-900 font-medium  h-9 rounded ${location.pathname === '/superadmin/usermanagement' ? "drop-shadow-[0_0.93px_2.8px_rgba(0,165,142,0.2)] bg-[#CCEDE8] px-14" : "bg-white px-10"}`}>Buyers</button>
+          <button className={`bg-teal-20 text-teal-900 font-medium  h-9 rounded ${(location.pathname === '/superadmin/usermanagement' || location.pathname === '/superadmin/usermanagement/buyers-recent-registered') ? "drop-shadow-[0_0.93px_2.8px_rgba(0,165,142,0.2)] bg-[#CCEDE8] px-14" : "bg-white px-10"}`}>Buyers</button>
         </NavLink>
         <NavLink to="/superadmin/usermanagement/seller" end={location.pathname === "/superadmin/usermanagement"}>
-          <button className={`bg-teal-20 text-teal-900 font-medium h-9 rounded ${(location.pathname === '/superadmin/usermanagement/seller' || location.pathname === "/superadmin/usermanagement/seller/recentregistrations" || location.pathname === "/superadmin/usermanagement/seller/sellersdetails") ? "drop-shadow-[0_0.93px_2.8px_rgba(0,165,142,0.2)] bg-[#CCEDE8] px-14" : "bg-white px-10"}`}>Seller</button>
+          <button className={`bg-teal-20 text-teal-900 font-medium h-9 rounded ${(location.pathname === '/superadmin/usermanagement/seller' || location.pathname === "/superadmin/usermanagement/seller/recentregistrations" || location.pathname === "/superadmin/usermanagement/seller/sellersdetails" || location.pathname === "/superadmin/usermanagement/seller/sellers-recent-registered") ? "drop-shadow-[0_0.93px_2.8px_rgba(0,165,142,0.2)] bg-[#CCEDE8] px-14" : "bg-white px-10"}`}>Seller</button>
         </NavLink>
       </div>
 

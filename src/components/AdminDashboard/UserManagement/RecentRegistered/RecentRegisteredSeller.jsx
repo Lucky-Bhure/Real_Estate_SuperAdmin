@@ -1,8 +1,11 @@
 import React from 'react'
 import { FiSearch } from 'react-icons/fi'
 import RecentRegistrationSeller from './RecentRegistrationSeller/RecentRegistrationSeller'
+import { useNavigate } from 'react-router-dom';
 
 const RecentRegisteredSeller = () => {
+
+    const navigate = useNavigate();
 
     const handleButton = () => {
         alert("Currently Under Developement");
@@ -16,10 +19,10 @@ const RecentRegisteredSeller = () => {
                     <FiSearch color='#00A58E' size={24} />
                     <input className="outline-none w-full pl-2 text-l font-bold-" type="text" placeholder='Search Here' />
                 </div>
-                <p className='text-[#8B909A] text-sm font-[500] mr-4' onClick={handleButton}>View More</p>
+                <p className='text-[#8B909A] text-sm font-[500] mr-4' onClick={() => navigate("/superadmin/usermanagement/seller/sellers-recent-registered")}>View More</p>
             </div>
 
-            <RecentRegistrationSeller />
+            <RecentRegistrationSeller value={3}/>
         </section>
     )
 }

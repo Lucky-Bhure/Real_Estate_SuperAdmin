@@ -44,7 +44,7 @@ const CircularSubscriberCard = () => {
 
   return (
     <div className="flex flex-col items-center w-[36%] h-full relative mt-2">
-      <h2 className="text-[#636466]/[70%] text-2xl font-bold absolute -top-6">Total Subscriber</h2>
+      <h2 className="text-[#636466]/[70%] text-xl font-bold absolute -top-4">Total Subscriber</h2>
       <div className="relative w-32 h-32 my-4">
       <p className="text-2xl font-[700] absolute z-2 ml-9">{totalSubscribers}</p>
         <CircularProgressbarWithChildren

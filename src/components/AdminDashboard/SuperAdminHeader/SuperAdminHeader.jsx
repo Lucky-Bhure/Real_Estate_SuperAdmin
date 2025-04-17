@@ -33,7 +33,10 @@ const SuperAdminHeader = () => {
       case "/superadmin/usermanagement/seller": setHeading({ title: "User Management - Seller", back: true });
         break;
       case "/superadmin/usermanagement/seller/recentregistrations": setHeading({ title: "User Management - Seller", back: true });
+      case "/superadmin/usermanagement/buyers-recent-registered": setHeading({ title: "User Management - Seller", back: true });
       case "/superadmin/usermanagement/seller/sellersdetails": setHeading({ title: "User Management - Seller", back: true });
+        break;
+      case "/superadmin/usermanagement/seller/sellers-recent-registered": setHeading({ title: "User Management - Seller", back: true });
         break;
       case "/superadmin/propertylisting": setHeading({ title: "Property Listing", back: false });
         break;

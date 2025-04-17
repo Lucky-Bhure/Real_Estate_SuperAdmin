@@ -42,6 +42,9 @@ import SellerDashboard from './components/AdminDashboard/UserManagement/Seller/S
 import RecentRegistered from './components/AdminDashboard/UserManagement/RecentRegistered/RecentRegisteredSeller';
 import RecentRegistrations from './components/AdminDashboard/UserManagement/RecentRegistered/RecentRegistrations/RecentRegistrations';
 import SellersDetails from './components/AdminDashboard/UserManagement/Seller/SellersDetails/SellersDetails';
+import BuyersDashboard from './components/AdminDashboard/UserManagement/Buyers/BuyersDashboard/BuyersDashboard';
+import BuyersRecentRegistered from './components/AdminDashboard/UserManagement/Buyers/BuyersRecentRegistered/BuyersRecentRegistered';
+import SellersRecentRegistered from './components/AdminDashboard/UserManagement/Seller/SellersRecentRegistered/SellersRecentRegistered';
 
 const agentStats = [
   {
@@ -293,7 +296,17 @@ const App = () => {
           children: [
             {
               path: "",
-              element: <Buyers />
+              element: <Buyers />,
+              children: [
+                {
+                  path: "",
+                  element: <BuyersDashboard />
+                },
+                {
+                  path: "buyers-recent-registered",
+                  element: <BuyersRecentRegistered />
+                },
+              ]
             },
             {
               path: "seller",
@@ -310,6 +323,10 @@ const App = () => {
                 {
                   path: "sellersdetails",
                   element: <SellersDetails/>
+                },
+                {
+                  path: "sellers-recent-registered",
+                  element: <SellersRecentRegistered/>
                 },
               ]
             }
