@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 import Buttons from '../Buttons/Buttons';
 import StateCards from '../../StateCards/StateCards';
@@ -92,11 +92,24 @@ const CustomLegend = () => {
   );
 };
 
-const Customers = ({handleHeading}) => {
+const Customers = () => {
 
-  const handleButton = () => {
-    alert("Currently Under Development");
-  }
+    const [isActive, setIsActive] = useState({
+      daily: true,
+      weekly: false,
+      monthly: false,
+      yearly: false
+    });
+    
+    const handleChart = (value) => {
+      setIsActive({
+        daily: false,
+        weekly: false,
+        monthly: false,
+        yearly: false,
+        [value]: true
+      });
+    };
 
   return (
     <>
@@ -122,10 +135,10 @@ const Customers = ({handleHeading}) => {
         <div className='mb-6 flex justify-between items-center w-full'>
           <h2 className='text-[#1F1F1F] text-xl font-[400]'>Overview Statistics</h2>
           <div className='flex w-[40%] justify-between border p-1 rounded-lg border-[#00a58e]'>
-            <button className='px-6 p-2 text-[12px] border border-[#00a58e] rounded-md' onClick={handleButton}>DAILY</button>
-            <button className='px-6 p-2 text-[12px] border border-[#00a58e] rounded-md' onClick={handleButton}>WEEKLY</button>
-            <button className='px-6 p-2 text-[12px] border border-[#00a58e] rounded-md' onClick={handleButton}>MONTHLY</button>
-            <button className='px-6 p-2 text-[12px] bg-[#00a58e] text-white border border-[#00a58e] rounded-md' onClick={handleButton}>YEARLY</button>
+            <button className={`px-6 p-2 text-[12px] border border-[#00a58e] rounded-md ${isActive.daily ? 'bg-[#00a58e] text-white' : 'bg-transparent'}`} onClick={() => handleChart('daily')}>DAILY</button>
+            <button className={`px-6 p-2 text-[12px] border border-[#00a58e] rounded-md ${isActive.weekly ? 'bg-[#00a58e] text-white' : 'bg-transparent'}`} onClick={() => handleChart('weekly')}>WEEKLY</button>
+            <button className={`px-6 p-2 text-[12px] border border-[#00a58e] rounded-md ${isActive.monthly ? 'bg-[#00a58e] text-white' : 'bg-transparent'}`} onClick={() => handleChart('monthly')}>MONTHLY</button>
+            <button className={`px-6 p-2 text-[12px] border border-[#00a58e] rounded-md ${isActive.yearly ? 'bg-[#00a58e] text-white' : 'bg-transparent'}`} onClick={() => handleChart('yearly')}>YEARLY</button>
           </div>
         </div>
 

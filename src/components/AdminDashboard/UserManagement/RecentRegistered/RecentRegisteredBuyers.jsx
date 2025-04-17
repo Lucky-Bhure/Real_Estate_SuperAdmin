@@ -57,32 +57,34 @@ const RecentRegisteredBuyers = ({ value = registrations.length }) => {
                 </tr>
             </thead>
             <tbody>
-                <tr className='w-full flex flex-col'>
-                    {
-                        registrations.slice(0, value).map((registration, index) => <li key={index} className='w-full flex justify-between border-b-2 border-[#E9E7FD] text-[#666666] items-center'>
-                            <td className='w-1/12'>
-                                <p className='text-start'>{registration.id}</p>
-                            </td>
-                            <td className='w-2/12 flex gap-4 items-center'>
-                                <img src={registration.img} alt="image" className='w-10 h-10 rounded-full' />
-                                <p className='text-black'>{registration.userName}</p>
-                            </td>
-                            <td className='w-2/12'>
-                                <p className='text-start'>{registration.locality}</p>
-                            </td>
-                            <td className='w-2/12'>
-                                <p className='text-start'>{registration.lookingFor}</p>
-                            </td>
-                            <td className='w-2/12'>
-                                <p className='text-start'>{registration.mobile}</p>
-                            </td>
-                            <td className='w-2/12 flex items-center justify-center'>
-                                <p className='text-start'>{registration.date}</p>
-                            </td>
-                        </li>)
-                    }
-                </tr>
+                {registrations.slice(0, value).map((registration, index) => (
+                    <tr
+                        key={index}
+                        className="w-full flex justify-between border-b-2 border-[#E9E7FD] text-[#666666] items-center"
+                    >
+                        <td className="w-1/12">
+                            <p className="text-start">{registration.id}</p>
+                        </td>
+                        <td className="w-2/12 flex gap-4 items-center">
+                            <img src={registration.img} alt="User" className="w-10 h-10 rounded-full" />
+                            <p className="text-black">{registration.userName}</p>
+                        </td>
+                        <td className="w-2/12">
+                            <p className="text-start">{registration.locality}</p>
+                        </td>
+                        <td className="w-2/12">
+                            <p className="text-start">{registration.lookingFor}</p>
+                        </td>
+                        <td className="w-2/12">
+                            <p className="text-start">{registration.mobile}</p>
+                        </td>
+                        <td className="w-2/12 flex items-center justify-center">
+                            <p className="text-start">{registration.date}</p>
+                        </td>
+                    </tr>
+                ))}
             </tbody>
+
         </table>
     )
 }

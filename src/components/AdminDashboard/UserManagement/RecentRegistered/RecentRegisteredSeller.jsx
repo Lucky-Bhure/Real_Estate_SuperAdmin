@@ -7,10 +7,6 @@ const RecentRegisteredSeller = () => {
 
     const navigate = useNavigate();
 
-    const handleButton = () => {
-        alert("Currently Under Developement");
-    }
-
     return (
         <section className='w-full py-6 px-8 bg-white rounded-xl'>
             <div className='w-full flex justify-between items-center'>
