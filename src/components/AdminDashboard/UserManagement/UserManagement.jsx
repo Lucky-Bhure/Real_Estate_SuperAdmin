@@ -93,7 +93,7 @@ const UserManagement = () => {
       </div>
 
       <div className='relative top-10'>
-        <StateCards state={location.pathname === '/superadmin/usermanagement' ? stateBuyers : stateSeller}/>
+        <StateCards state={(location.pathname === '/superadmin/usermanagement' || location.pathname === '/superadmin/usermanagement/buyers-recent-registered') ? stateBuyers : stateSeller}/>
       </div>
 
       <Outlet />

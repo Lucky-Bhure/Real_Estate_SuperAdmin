@@ -8,10 +8,6 @@ const BuyersDashboard = () => {
 
     const navigate = useNavigate();
 
-    const handleButton = () => {
-        alert("Currently Under Developement");
-    }
-
   return (
     <>
         <div className='w-full flex mt-10 justify-center gap-6'>
